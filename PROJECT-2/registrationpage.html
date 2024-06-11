@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Registartion page</title>
+
+        <style>
+            body{
+                background-image:url(beach1.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+
+            }
+            .box{
+                background-color:rgba(212, 212, 184, 0.5);
+                padding: 20px;
+                width: 300px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                right: 100px;
+                 top: 50%;
+                transform: translateY(-50%);
+                border-radius: 40px;
+            }
+            h1{
+               
+                color: black;
+                font-size: 45;
+                width: 80%;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                
+            }
+            nav{
+                background-color: aquamarine;
+                color:rgb(136, 136, 233);
+                display: inline;
+                margin-right: 40px;
+            }
+            h3{
+                align-content: center;
+            }
+            #title{
+                background-color:rgba(171, 228, 228, 0.5);
+                width: 100%;
+            }
+            #radio{
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+    <header>
+       <div id="title"> <h1>MY TRIP.in</h1></div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="box">
+        <h3>REGISTARTION</h3>
+        Name: <input type="text" name="uname" placeholder="Enter the name"> <br>
+        Phonenumber:<input type="number" name="unum" placeholder="Enter the number"> <br>
+        Address:<input type="text" name="uadd" placeholder="Address"> <br>
+        <div id="radio">
+        Hotel type:  <br><input type="radio" name="uhotel" value="E">Economic<br>
+        <input type="radio" name="uhotel" value="F">First class<br>
+        <input type="radio" name="uhotel" value="P">Premeium<br>
+    </div>
+        <br>
+        Transportation:<br>
+        <select name="strans">
+            <option value="car">Car</option>
+            <option value="bus">Bus</option>
+            <option value="train">Train</option>
+            <option value="plane">plane</option>
+        </select>
+        Number of people:<input type="number" name="persons"  min="0" max="20" step="2" value="2"><br>
+        <form action="login.html">
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
